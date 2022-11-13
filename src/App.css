@@ -1,7 +1,22 @@
+@font-face {
+  font-family: 'Neptern'; /*a name to be used later*/
+  src: url('/public/fontNeptern/neptern.ttf'); /*URL to font*/
+}
 .App {
   text-align: center;
+ 
 }
+*{
+  padding: 0;
+  margin: 0;
+}
+.titleClass{
+  font-family: Neptern;
+  font-size: 10rem; 
+  letter-spacing: 7px;
+  
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
