@@ -2,6 +2,118 @@
   font-family: 'Neptern'; /*a name to be used later*/
   src: url('/public/fontNeptern/neptern.ttf'); /*URL to font*/
 }
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --pink:	RGB(244, 194, 194);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+}
+.box p {
+
+  color: var(--grayishBlue);
+}
+.box h2{
+  font-weight: 900;
+  /* font-size: 4em; */
+}
+
+.box {
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px -20px var(--grayishBlue);
+  padding: 50px;
+  margin: 20px; 
+}
+
+@media (max-width: 450px) {
+  .box {
+      height: 100px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .box {
+      text-align: center;
+      height: 180px;
+  }
+}
+
+
+.cyan {
+  color: var(--cyan);
+  border-top: 3px solid var(--cyan);
+}
+.red {
+  color: var(--red);
+
+  border-top: 3px solid var(--red);
+}
+.blue {
+  color: var(--blue);
+
+  border-top: 3px solid var(--blue);
+}
+.orange {
+  color: var(--orange);
+
+  border-top: 3px solid var(--orange);
+}
+.pink{
+  color: var(--pink);
+  
+  border-top: 3px solid var(--pink);
+
+}
+
+.box h1 {
+  color: var(--varyDarkBlue);
+  font-size: 2em;
+  position: relative;
+  top:-30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.cardTitle h2{
+  font-size: 3em;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.cardTitle span{
+  padding-left: 10px;
+  position: relative;
+  top: -10px;
+  left: 0;
+  font-size: 0.5em;
+  color: var(--varyDarkBlue);
+
+  
+}
+
+@media (min-width: 950px) {
+  .container {
+      display: flex;
+    
+  }
+
+  .box {
+      width: 20%;
+   
+  }
+
+  
+}
 .App {
   text-align: center;
  
@@ -13,7 +125,8 @@
 .titleClass{
   font-family: Neptern;
   font-size: 10rem; 
-  letter-spacing: 7px;
+  letter-spacing: 10px;
+  font-weight: 500;
   
 
 }
@@ -50,4 +163,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
+
+
+}
+
+.inputGroup input,button {
+  font-size: 100%;
+  padding: 0.8em;
+  margin: 10px;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  
+
+  border-radius: 20px;
+  border-color: rgb(150, 150, 200);
+
+  color: aliceblue;
+}
+.inputGroup input{
+  background-color: transparent;
+}
+
+
+
+.userInput
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clipText{
+  
+    background: linear-gradient(144deg,#fff, #5B42F3 55%,#FF0063);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  
 }
