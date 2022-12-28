@@ -11,4 +11,10 @@ With the advent of pervasive usage of online platforms, online abusive behaviour
 ●	EDA (Exploratory Data Analysis)<br/>
 
 
+## Preview of the application
+<img width="100%" src = "./readme_assets/demo.jpg">
+
+## Flow chart
+<img width="400px" src = "./readme_assets/flowchart.png">
+
 
