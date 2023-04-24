@@ -93,7 +93,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="titleClass clipText">Abuse  detection</h1>
         <form>
           <div className="inputGroup userInput">
             <input type="text" required="" autoComplete="off" onChange={handleChange} placeholder="Type here ...."></input>
